@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génerateur de mote de passe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Générateur de mot de passe</h1>
+    <form>
+        <label for="lenght">Longueur du mot de passe</label>
+        <input type="num" name="lenght" id="lenght"><br>
+        <div class="checkbox">
+            <input type="checkbox" id="include-numbers">
+            <label for="include-numbers">Inculere des nombres</label>
+            <input type="checkbox" id="include-symbols" name="include-symbols">
+            <label for="include-symbols">Inclure des symboles</label>
+        </div>
+        <button type="button" onclick="generatepasword()">Générer le mot de passe</button>
+    </form>
+    <div class="pasword" id="pasword">Votre mot de passe</div>
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>
